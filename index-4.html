@@ -73,49 +73,140 @@
 
 <div class="content"><div class="ic"><!--More Website Templates @ TemplateMonster.com - December 02, 2013!--></div>
   <div class="container_12">
-    <div class="grid_8">
-      <h3>سفارش خود را ثبت کنید</h3>
-      <img src="images/page5_img1.jpg" alt="" class="img_inner fleft">
-      <div class="extra_wrapper">
-        <p class="col1"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+    <div class="grid_12">
+      <h3 class="head2"> سبد خرید</h3>
+    </div>               
+        <!-- Start row -->
+        <div class="row">
+            <!-- Start col -->
+            <div class="col-md-12 col-lg-12 col-xl-12">
+                <div class="card m-b-30">
+                    <div class="card-header">
+                        <h5 class="card-title">سبد خرید</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-xl-8">
+                                <div class="cart-container">
+                                    <div class="cart-head">
+                                        <div class="table-responsive">
+                                            <table class="table table-borderless">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">وضعیت</th>                                               
+                                                        <th scope="col">تصویر</th>
+                                                        <th scope="col">محصول</th>
+                                                        <th scope="col">تعداد</th>
+                                                        <th scope="col">قیمت</th>
+                                                        <th scope="col" class="text-right">مجموع</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">یک</th>
+                                                        <td><a href="#" class="text-danger"><i class="ri-delete-bin-3-line"></i></a></td>
+                                                        <td><img src="https://themesbox.in/admin-templates/olian/html/light-vertical/assets/images/ecommerce/product_01.svg" class="img-fluid" width="35" alt="product"></td>
+                                                        <td>میوه</td>
+                                                        <td>
+                                                            <div class="form-group mb-0">
+                                                                <input type="number" class="form-control cart-qty" name="cartQty1" id="cartQty1" value="1">
+                                                            </div>
+                                                        </td>
+                                                        <td>قیمت</td>
+                                                        <td class="text-right">قیمت</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">دو</th>
+                                                       <td><a href="#" class="text-danger"><i class="ri-delete-bin-3-line"></i></a></td>
+                                                        <td><img src="https://themesbox.in/admin-templates/olian/html/light-vertical/assets/images/ecommerce/product_02.svg" class="img-fluid" width="35" alt="product"></td>
+                                                        <td>میوه</td>
+                                                        <td>
+                                                            <div class="form-group mb-0">
+                                                                <input type="number" class="form-control cart-qty" name="cartQty2" id="cartQty2" value="1">
+                                                            </div>
+                                                        </td>
+                                                        <td>قیمت</td>
+                                                        <td class="text-right">قیمت</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">سه</th>
+                                                        <td><a href="#" class="text-danger"><i class="ri-delete-bin-3-line"></i></a></td>
+                                                        <td><img src="https://themesbox.in/admin-templates/olian/html/light-vertical/assets/images/ecommerce/product_03.svg" class="img-fluid" width="35" alt="product"></td>
+                                                        <td>میوه</td>
+                                                        <td>
+                                                            <div class="form-group mb-0">
+                                                                <input type="number" class="form-control cart-qty" name="cartQty3" id="cartQty3" value="1">
+                                                            </div>
+                                                        </td>
+                                                        <td>قیمت</td>
+                                                        <td class="text-right">قیمت</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="cart-body">
+                                        <div class="row">
+                                            <div class="col-md-12 order-2 order-lg-1 col-lg-5 col-xl-6">
+                                                <div class="order-note">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <input type="search" class="form-control" placeholder="کد تخفیف" aria-label="Search" aria-describedby="button-addonTags">
+                                                                <div class="input-group-append">
+                                                                    <button class="input-group-text" type="submit" id="button-addonTags">بررسی</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="specialNotes">توضیحات:</label>
+                                                            <textarea class="form-control" name="specialNotes" id="specialNotes" rows="3" placeholder="پیام خود را اینجا بنویسید"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 order-1 order-lg-2 col-lg-7 col-xl-6">
+                                                <div class="order-total table-responsive ">
+                                                    <table class="table table-borderless text-right">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>مجموع :</td>
+                                                                <td>قیمت</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>هزینه ارسال :</td>
+                                                                <td>قیمت</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>درصد ارزش افزوده :</td>
+                                                                <td>درصد</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="f-w-7 font-18"><h4>مقدار :</h4></td>
+                                                                <td class="f-w-7 font-18"><h4>قیمت</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-footer text-right">
+                                        <button type="button" class="btn btn-info my-1"><i class="ri-save-line mr-2"></i>به روزرسانی سبد خرید</button>
+                                        <a href="page-checkout.html" class="btn btn-success my-1">تایید سبد خرید<i class="ri-arrow-right-line ml-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End col -->
         </div>
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است <span class="cont_phone">با شماره درج شده تماس بگیرید</span> <br>
-      <a href="#" class="reserv"><span>@ </span> برای ثبت خرید آنلاین کلیک کنید</a>
+        <!-- End row -->
     </div>
-    <div class="grid_4">
-      <div class="hours">
-        <div class="title">ساعت های فعالیت</div>
-        <div>
-        صبح<br>
-        11:45 عصر 2:30 صبح<br>
-        ظهر<br>
-        10:30 عصر 2 صبح<br>
-         عصر<br>
-         5:30 عصر  9:00 صبح<br>
-        شب<br>
-        5:30 عصر 9:00 صبح<br>
-        روز های تعطیل  <br>
-        8:30 عصر 5:00 صبح <br>
-        </div>
-      </div>
-      <h3 class="head3">آخرین اخبار</h3>
-      <div class="news">
-        <time datetime="2013-01-01">مهر<span>04</span></time>
-        <div class="extra_wrapper">
-          <p class="col1"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی </a></p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-        </div>
-      </div>
-      <div class="news">
-        <time datetime="2013-01-01">شهریور<span>08</span></time>
-        <div class="extra_wrapper">
-          <p class="col1"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a></p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-        </div>
-      </div>
     </div>
-  </div>
-</div>
 
 <!--==============================footer=================================-->
 
