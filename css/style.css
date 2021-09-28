@@ -787,3 +787,13 @@ footer a:hover {
     background-position: right 0;
     outline: medium none;
 }
+
+.truncate {
+	display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height:100px;
+  }
