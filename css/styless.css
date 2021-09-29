@@ -1,0 +1,93 @@
+/* CSS Document */
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir.eot');
+  src: local('../fonts/Vazir'), url('../fonts/Vazir.woff') format('woff'), url('../fonts/Vazir.ttf') format('truetype');
+}
+
+
+.container{
+  align-content: center;
+  width: 100%;
+  direction: rtl;
+}
+
+.card{
+  border: 2px solid #c55901;
+  height: 500px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 600px;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.card-header h2{
+  color: white;
+  float: right;
+  font-size: 50px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.card-footer {
+  color: white;
+  font-size: 17px;
+}
+
+.input-group-prepend span{
+  width: 50px;
+  background-color: #016dc5;
+  color: black;
+  border:0 !important;
+}
+
+input:focus{
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+  color: white;
+}
+
+.remember input
+{
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.login_btn{
+  
+  color: black;
+  background-color: #016dc5;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.login_btn:hover{
+  color: black;
+  background-color: white;
+}
+
+.links a {
+  margin-right: 4px;
+}
+
+a:hover {
+	color:blanchedalmond;
+	
+}
+
+#txt-password, #txt-username {
+  border-radius: 5px 0 0 5px;
+  border: 2px solid rgba(197, 89, 1, 0.75);
+}
+
+.input-icon {
+  border-radius: 0;
+}
