@@ -23,10 +23,14 @@
   background-color: rgba(0,0,0,0.5) !important;
 }
 
+.card-body {
+  margin-top: 50px;
+}
+
 .card-header h2{
-  color: white;
+  color: #b1d1eb;
   float: right;
-  font-size: 50px;
+  font-size: 30px;
 	padding-top: 10px;
 	margin-bottom: 20px;
 }
@@ -46,11 +50,14 @@
 input:focus{
   outline: 0 0 0 0  !important;
   box-shadow: 0 0 0 0 !important;
+}
 
+.form-control {
+  background-color: #b1d1eb;
 }
 
 .remember{
-  color: white;
+  color: #b1d1eb;
 }
 
 .remember input
@@ -71,11 +78,20 @@ input:focus{
 
 .login_btn:hover{
   color: black;
-  background-color: white;
+  background-color: #b1d1eb;
+}
+
+.links {
+  color: #b1d1eb;
 }
 
 .links a {
-  margin-right: 4px;
+  margin-right: 8px;
+  color: #5aa7be;
+}
+
+.d-flex a {
+  color: #5aa7be;
 }
 
 a:hover {
@@ -85,7 +101,7 @@ a:hover {
 
 #txt-password, #txt-username {
   border-radius: 5px 0 0 5px;
-  border: 2px solid rgba(197, 89, 1, 0.75);
+  border: 1px solid rgba(197, 89, 1, 0.75);
 }
 
 .input-icon {

@@ -117,6 +117,23 @@
 	-webkit-transition: 0.5s ease;
 }
 
+#form .error-messageone, #form .empty-messageone {
+	color: #E02A05;
+	font-size: 11px;
+	line-height:14px;
+	width:auto;
+	position: absolute;
+	z-index: 999;
+
+	top: 10px;
+	opacity: 0;
+	left: 5px;
+	float:left;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
 /*#form .message .error-message, #form .message .empty-message {
 	bottom: -16px;
 }*/
@@ -128,16 +145,39 @@
 	opacity: 1;
 }
 
+#form .invalid .error-messageone, #form .empty .empty-messageone {
+	opacity: 1;
+}
+
 .btns {
 	margin-bottom: 3px;
 	text-align: right;
 	padding-top: 28px;
+	display: inline;
+	margin-left: 20px;
+}
 
+.btnss {
+	display: inline;
 }
 
 .btns a {
+	padding: 5px;
+	color: azure;
+	background-color: #016dc5;
+	border: 1px solid #c55901;
+	margin-top: 10px;
 	display: inline-block;
-	margin: 0;
+	font: 300 18px/22px 'Open Sans', sans-serif;
+}
+
+.btnss a {
+	padding: 5px;
+	color: azure;
+	background-color: #016dc5;
+	border: 1px solid #c55901;
+	margin-top: 10px;
+	display: inline-block;
 	font: 300 18px/22px 'Open Sans', sans-serif;
 }
 

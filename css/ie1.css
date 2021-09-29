@@ -39,7 +39,15 @@
 	display: block;
 }
 
+#form .invalid .error-messageone, #form .empty .empty-messageone {
+	display: block;
+}
+
 #form .error-message, #form .empty-message {
+	display: none;
+}
+
+#form .error-messageone, #form .empty-messageone {
 	display: none;
 }
 

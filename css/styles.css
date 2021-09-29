@@ -50,7 +50,7 @@ a.cta {
   display: block;
   cursor: pointer;
   color: #eee;
-  background-color: #2ecc71;
+  background-color: #016dc5;
   border: 0;
   font-size: 0.875em;
   font-weight: bold;
@@ -59,7 +59,7 @@ a.cta {
   text-transform: uppercase;
 }
 a.cta:hover {
-  background-color: #016dc5;
+  background-color: #2ecc71;
   color: #fff;
 }
 a.cta:active {

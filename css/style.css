@@ -101,6 +101,11 @@ img {
 	max-width: 100%;
 }
 
+.grid_3 img {
+	height: 150px;
+	width: 150px;
+}
+
 address {
 	font-style: normal;
 }
@@ -391,6 +396,8 @@ top: 2px;
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
+	height: 500px;
+	width: 1350px;
 }
 
 .block1.blur  img {
@@ -496,7 +503,10 @@ a.col1:hover, .col1>a:hover {
 	color: #d9c381;
 }
 .div-tabs  {
+	margin-left: 115px;
 	text-align: center;
+	display: inline-grid;
+  	grid-template-columns: 955px auto auto;
 }
 
 .div-tabs .clear {
@@ -514,6 +524,7 @@ a.col1:hover, .col1>a:hover {
 
 .post {
 	overflow: hidden;
+	direction: rtl;
 }
 
 .post .fleft {
@@ -556,6 +567,11 @@ a.link1 {
 	position: relative;
 	top: -1px;
 	font:  16px/20px 'Open Sans', sans-serif;
+}
+
+.grid_3 a {
+	height: 160px;
+	width: 230px;
 }
 
 a.reserv {
@@ -675,6 +691,7 @@ a.gal:hover span {
 /****Map***/
 
 .map {
+	margin-right: 50px;
 }
 
 .map figure {
@@ -719,9 +736,29 @@ address dd span {
 	height: 350px;
 }
 
+.contact {
+	direction: rtl;
+}
+
+.email {
+	direction: ltr;
+}
+
+.phone {
+	direction: ltr;
+}
+
 .contact h3.head3 {
 	padding-top: 58px;
 	margin-bottom: 44px;
+	margin-right: 50px;
+	font-size: 35px;
+}
+
+.contact h3.head5 {
+	padding-top: 58px;
+	margin-bottom: 44px;
+	font-size: 35px;
 }
 
 a.col2:hover {
@@ -797,3 +834,19 @@ footer a:hover {
     text-overflow: ellipsis;
     height:100px;
   }
+
+.truncates {
+	display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 2000px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height:60px;
+  }
+
+.ab {
+	margin-top: 50px;
+	height: 400px;
+	width: 1000px;
+}
