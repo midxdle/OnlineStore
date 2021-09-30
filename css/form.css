@@ -162,9 +162,10 @@
 }
 
 .btns a {
-	padding: 5px;
+	padding: 5px 15px 5px 15px;
 	color: azure;
 	background-color: #016dc5;
+	color: black;
 	border: 1px solid #c55901;
 	margin-top: 10px;
 	display: inline-block;
@@ -172,9 +173,10 @@
 }
 
 .btnss a {
-	padding: 5px;
+	padding: 5px 15px 5px 15px;
 	color: azure;
 	background-color: #016dc5;
+	color: black;
 	border: 1px solid #c55901;
 	margin-top: 10px;
 	display: inline-block;

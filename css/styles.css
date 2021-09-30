@@ -38,6 +38,7 @@ body {
 @media screen and (min-width: 30em) {
   .content {
     padding: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -309,10 +310,10 @@ td input.quantity {
   .cost {
     width: 30%;
     position: fixed;
-    left: 25px;
+    left: 75px;
     top: 257px;
     border-width: 1px 0 1px 1px;
-  }
+    margin-top: 125px;
 }
 @media screen and (min-width: 55em) {
   .cost {
@@ -330,7 +331,7 @@ td input.quantity {
   margin: 0;
   padding: 10px 0;
   width: 100%;
-  font-size: 1em;
+  font-size: 1.3em;
   text-align: center;
   text-transform: uppercase;
 }
