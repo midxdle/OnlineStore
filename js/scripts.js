@@ -23,7 +23,7 @@ $(function(){
             pricePer,
             total
 
-        if ( val <= "0") {
+        if ( val <= "-1") {
             removeItem.apply(this);
         } else {
             // reset the prices
