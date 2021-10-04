@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>منو</title>
+     <meta charset="utf-8">
+     <link rel="shortcut icon" href="../static/images/favicon.ico" />
+     <link rel="icon" href="../static/images/favicon.ico">
+     <link rel="stylesheet" href="../static/css/touchTouch.css">
+     <link rel="stylesheet" href="../static/css/style.css">
+     <script src="../static/js/jquery.js"></script>
+     <script src="../static/js/jquery-migrate-1.1.1.js"></script>
+     <script src="../static/js/jquery.equalheights.js"></script>
+     <script src="../static/js/jquery.ui.totop.js"></script>
+     <script src="../static/js/jquery.tabs.min.js"></script>
+     <script src="../static/js/touchTouch.jquery.js"></script>
+     <script src="../static/js/jquery.easing.1.3.js"></script>
+     <script>
+        $(document).ready(function(){
+
+          $().UItoTop({ easingType: 'easeOutQuart' });
+         $('.gallery a.gal').touchTouch();
+         
+       }) 
+     </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+    <![endif]-->
+    <!--[if lt IE 10]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie1.css">
+    <![endif]-->
+    
+     </head>
+     <body  class="">
+
+<!--==============================header=================================-->
+ <header> 
+  <div class="container_12">
+   <div class="grid_12"> 
+    <div class="socials">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"> </a>
+      <a href="#" class="last"></a>
+    </div>
+    <h1><a href="{% url 'blog:home' %}"><img class="logo" src="../static/images/logo3.jpg" alt="Boo House"></a> </h1>
+    <div class="menu_block">
+
+
+    <nav id="bt-menu" class="bt-menu">
+        <a href="#" class="bt-menu-trigger"><span>منو</span></a>
+        <ul>
+          <li class="bt-icon "><a href="{% url 'blog:home' %}">خانه</a></li>
+         <li class="bt-icon"><a href="{% url 'blog:logpage' %}">ورود</a></li>
+         <li class="current bt-icon"><a href="{% url 'blog:menu' %}">منو</a></li>
+         <li class="bt-icon"><a href="index-3.html">بلاگ</a></li>
+         <li class="bt-icon"><a href="index-4.html">سبد خرید</a></li>
+         <li class="bt-icon"><a href="index-5.html">ارتباط با ما</a></li>
+        </ul>
+      </nav>
+    
+ <div class="clear"></div>
+</div>
+<div class="clear"></div>
+          </div>
+      </div>
+</header>
+
+<!--==============================Content=================================-->
+
+<div class="content"><div class="ic"><!--More Website Templates @ TemplateMonster.com - December 02, 2013!--></div>
+  <div class="container_12">
+    <div class="grid_12">
+      <h3 class="head2">محصولات ما</h3>
+    </div>  
+    
+    <div class="tabs tb gallery">
+             <div class="div-nav  ">
+             <div class="grid_12">
+                 <ul class="nav">
+                    <li class="selected"><a href="#tab-1" class="">میوه ها</a></li>
+                    <li><a href="#tab-2">سبزیجات</a></li>
+                 </ul>
+             </div>    
+             </div>
+
+             <div class="div-tabs">
+              <div  id="tab-1" class="tab-content gallery1">
+                  {% for fruit in fruits %}
+                  <div class="grid_3">
+                    <a href="{{fruit.image.url}}" class="gal"><img src="{{fruit.image.url}}" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">{{fruit.name}} </a></span> {{fruit.price}} هزار تومان</div>
+                  </div>
+                  {% endfor %}
+              </div>
+
+              <div id="tab-2" class="tab-content gallery2">
+                  <div class="clear"></div>
+                  {% for vegtabale in vegtabales %}
+                  <div class="grid_3">
+                    <a href="{{vegtabale.image.url}}" class="gal"><img src="{{vegtabale.image.url}}" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">{{vegtabale.name}} </a></span> {{vegtabale.price}} هزار تومان</div>
+                  </div>
+                  {% endfor %}
+              </div>
+              </div>
+             </div>
+        </div>
+  </div>
+</div>
+
+<!--==============================footer=================================-->
+
+<footer>    
+  <div class="container_12">
+    <div class="grid_6 prefix_3">
+      <a href="{% url 'blog:home' %}" class="f_logo"><!--<img src="images/f_logo.png" alt="">--><span></span></a>
+    </div>
+  </div>
+</footer>
+       <script>
+      $(document).ready(function(){ 
+         $(".bt-menu-trigger").toggle( 
+          function(){
+            $('.bt-menu').addClass('bt-menu-open'); 
+          }, 
+          function(){
+            $('.bt-menu').removeClass('bt-menu-open'); 
+          } 
+        ); 
+      }) 
+    </script>
+</body>
+
+</html>
